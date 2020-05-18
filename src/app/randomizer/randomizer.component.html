@@ -1,27 +1,14 @@
-<nav class="navbar navbar-light bg-light">
-<span></span>
-</nav>
+<nav class="navbar navbar-light bg-light"></nav>
 <div class="container">
-<h1>THE TEAM OLYMPUS STAND UP RANDOMIZER</h1>
-<p>Version 1.0</p>
-<div class="jumbotron">
-  <h1>{{whoGoesNext}}</h1>
-</div>
-<button type="button" class="btn btn-primary btn-lg btn-block"  (click)=nextPerson()>ClICK ME TO SEE WHO GOES NEXT</button>
-
-
-<!-- <form [formGroup]="form" (ngSubmit)="submitForm()" novalidate>
-  <div *ngFor="let data of Data; let i=index">
-    <label>
-      <input type="checkbox" [value]="data.value" (change)="onCheckboxChange($event)" />
-      {{data.name}}
-    </label>
+  <h1>{{title}}</h1>
+  <p>Version 1.0</p>
+  <div class="jumbotron">
+    <h1>{{ whoGoesNext }}</h1>
   </div>
-
-  <input type="submit" value="Submit">
-</form> -->
-
-
-
+  <button
+    type="button"
+    class="btn btn-primary btn-lg btn-block"
+    (click)="nextPerson()">
+    {{button}}
+  </button>
 </div>
-
